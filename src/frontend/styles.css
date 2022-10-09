@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400;500;600&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0
+}
+
+:root{
+    --main-color-primary: rgba(215, 42, 42, 0.6);
+    --main-color-secondary: #292929;
+    --main-color-white: rgb(245, 210, 210);
+    --main-color-accent: #9F8D19;
+    --section-margin: 1em 2em;
+}
+
+body{
+    font-family: 'Gemunu Libre', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-size: 16px;
+    background-color: var(--main-color-secondary);
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1,h2,h3,h4,h5,h6, div, p, aside, section{
+    display: inline-block;
+}
+
+h1{
+    letter-spacing: .2rem;
+    margin: 0.5rem 0;
+}
+
+h2{
+    letter-spacing: .2rem;
+    margin: 0.3rem 0;
+}
+h3{
+    letter-spacing: .1rem;
+    margin: 0.3rem 0;
+}
+h4{
+    letter-spacing: .1rem;
+    margin: 0.1rem 0;
+}
+h5{
+    letter-spacing: .07rem;
+    margin: 0.1rem 0;
+}
+h6{
+    letter-spacing: .07rem;
+    margin: 0.1rem 0;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section{
+    /* margin: 0 3em; */
+    /* border: 1px solid red; */
+}
+
+/* NavBar styles */
+nav{
+    width: 100%;
+    box-shadow: rgba(215, 42, 42, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo{
+    margin: 2rem;
+    color: var(--main-color-primary);
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+    font-style: italic;
+    letter-spacing: .7em;
+}
+
+/* Main styles */
+main{
+    width: calc(100% - 32px);
+    /* height:calc(100% - 20%); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    position: relative;
+    top: 5.8em;
+}
+
+
+/* Main contact style */
+.credits-container, .contact-container{
+    align-self: center;
+    writing-mode: vertical-lr;
+    text-orientation:upright;
+
+    /* height: 100%; */
+    
+    display: inline-block;
+    margin: 0;
+}
+
+.credits{
+    width: 2rem;
+    position: relative;
+    bottom: 10em;
+    text-align: end;
+    margin: 10em;
+    top: 1rem;
+}
+
+/* Main credit style */
+
+.contact{
+    width: 2rem;
+    /* height: 70%; */
+    position: relative;
+    top: 10em;
+
+    text-align: start;
+    margin-right: 10em; 
+    border: 1px solid orange;
+}
+
+.chat-container{
+    width:95%;
+    margin: 0;
+    padding: 5px;
+    /* background-color: black; */
+    border-radius: 10px;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+
+    
+}
+
+.chat{
+    width: 85%;
+    height: 500px;
+    border:  8px solid rgba(240, 46, 170, 0.2);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: .2rem;
+}
+
+
+.msg-view{
+    width: 95%;
+    height: 93%;
+    margin: .3rem;
+    background-color: var(--main-color-white);
+    border-radius: 5px;
+
+}
+
+.msg-form{
+ width: 96.5%;
+ height: 8%;
+ border-radius: 5px;
+ margin-bottom: .5rem;
+
+ display: flex;
+ justify-content: space-between;
+}
+
+#msg{
+    width: 88%;
+    margin: .1rem;
+    background: var(--main-color-white);
+    border-color: var(--main-color-white);
+    border-radius: 5px;
+
+    font-size: 1.3rem;
+    padding: 0 .4rem;
+}
+
+.form-btn{
+    margin: .1em;
+    padding:.4em;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--main-color-primary);
+    color: var(--main-color-white);
+}
